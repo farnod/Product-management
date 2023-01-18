@@ -5,9 +5,13 @@ import { CacheProvider } from "@emotion/react";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
+import { Button } from "@mui/material";
 
 const theme = createTheme({
 	direction: "rtl",
+	typography:{
+		fontFamily:"vazir, roboto"
+	}
 });
 
 const cacheRTL = createCache({
@@ -25,7 +29,7 @@ class App extends Component {
 							<title>مدیریت کالاهای ارسالی</title>
 						</Helmet>
 						<div>
-							<h1>مدیریت کالاهای ارسالی</h1>
+							<Button variant="contained" >کلیک کن</Button>
 						</div>
 					</HelmetProvider>
 				</ThemeProvider>
