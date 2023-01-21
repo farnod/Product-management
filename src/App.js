@@ -7,11 +7,13 @@ import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
 import { Button } from "@mui/material";
 
+import Header from "./ui/Header";
+
 const theme = createTheme({
 	direction: "rtl",
-	typography:{
-		fontFamily:"vazir, roboto"
-	}
+	typography: {
+		fontFamily: "vazir, roboto",
+	},
 });
 
 const cacheRTL = createCache({
@@ -29,7 +31,7 @@ class App extends Component {
 							<title>مدیریت کالاهای ارسالی</title>
 						</Helmet>
 						<div>
-							<Button variant="contained" >کلیک کن</Button>
+							<Header />{" "}
 						</div>
 					</HelmetProvider>
 				</ThemeProvider>
