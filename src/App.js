@@ -8,6 +8,7 @@ import { prefixer } from "stylis";
 import { Button } from "@mui/material";
 
 import Header from "./ui/Header";
+import DenseAppBar from "./ui/Header2";
 
 const theme = createTheme({
 	direction: "rtl",
@@ -31,7 +32,8 @@ class App extends Component {
 							<title>مدیریت کالاهای ارسالی</title>
 						</Helmet>
 						<div>
-							<Header />{" "}
+							{/* <Header /> */}
+							<DenseAppBar  />
 						</div>
 					</HelmetProvider>
 				</ThemeProvider>
