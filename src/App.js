@@ -9,6 +9,8 @@ import { Button } from "@mui/material";
 
 import Header from "./ui/Header";
 import DenseAppBar from "./ui/Header2";
+import Test from "./ui/Test";
+import PrimarySearchAppBar from "./ui/PrimarySearchAppBar"
 
 const theme = createTheme({
 	direction: "rtl",
@@ -32,8 +34,7 @@ class App extends Component {
 							<title>مدیریت کالاهای ارسالی</title>
 						</Helmet>
 						<div>
-							{/* <Header /> */}
-							<DenseAppBar  />
+							<PrimarySearchAppBar />
 						</div>
 					</HelmetProvider>
 				</ThemeProvider>
